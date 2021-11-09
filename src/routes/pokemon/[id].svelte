@@ -15,6 +15,14 @@
     console.log(pokeman);
 </script>
 
+<style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
 
 <div class="flex flex-col text-center">
 <h1 class="text-4xl text-center my-8 uppercase" >{pokeman.name}</h1>
@@ -23,5 +31,5 @@
     | Weight: <strong>{pokeman.weight}</strong>
 </p>
 
-<img class="card-image" src={pokeman.sprites['front_default']} alt={pokeman.name} />
+<img class="card-image, center" styles width="200" src={pokeman.sprites['front_default']} alt={pokeman.name} />
 </div>
